@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Clínica especializada em angiologia e cirurgia vascular. Atendimento focado no diagnóstico e tratamento das doenças do sistema vascular. Agende sua consulta.">
+  <meta name="keywords"
+    content="angiologia, cirurgia vascular, varizes, saúde vascular, médica, consulta online, trombose">
+  <meta name="author" content="Scarlet Medeiros">
+  <title>Scarlet Medeiros | Especialista em Angiologia e Cirurgia Vascular</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================
+       PRELOADER
+  ============================================= -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-circle"></div>
+      <span class="preloader-text">Scarlet Medeiros</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+  ============================================= -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="nav-logo" id="nav-logo">
+          <img src="assets/img/IMG_7556.PNG" alt="Logo Scarlet Medeiros" class="logo-img">
+          <span class="logo-text">Scarlet <span class="logo-accent">Medeiros</span></span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#indicacoes" class="nav-link">Indicações</a>
+          </li>
+          <li class="nav-item">
+            <a href="#como-funciona" class="nav-link">Como Funciona</a>
+          </li>
+          <li class="nav-item">
+            <a href="#programas" class="nav-link">Programas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#depoimentos" class="nav-link">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
+        </ul>
+
+        <a href="#contato" class="nav-cta" id="nav-cta">
+          <i class="ph ph-calendar-check"></i>
+          Agendar Consulta
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION
+  ============================================= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-up">
+          <span class="hero-badge">
+            <i class="ph ph-heartbeat"></i>
+            Especialista em Angiologia e Cirurgia Vascular
+          </span>
+          <h1 class="hero-title">
+            Cuidado especializado para a <span class="text-gradient">saúde das suas pernas</span> e sistema vascular
+          </h1>
+          <p class="hero-subtitle">
+            Tratamentos modernos para varizes, vasinhos e acompanhamento vascular completo para sua qualidade de vida e
+            estética.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#contato" class="btn btn-primary btn-lg">
+              <i class="ph ph-whatsapp-logo"></i>
+              Agendar Consulta
+            </a>
+            <a href="#sobre" class="btn btn-outline btn-lg">
+              <i class="ph ph-play-circle"></i>
+              Saiba Mais
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="hero-trust-avatars">
+              <div class="trust-avatar" style="background: linear-gradient(135deg, #0A8C7A, #0D6B5E);"></div>
+              <div class="trust-avatar" style="background: linear-gradient(135deg, #2AAA9A, #0A8C7A);"></div>
+              <div class="trust-avatar" style="background: linear-gradient(135deg, #0D6B5E, #1A2332);"></div>
+            </div>
+            <p class="hero-trust-text">
+              <strong>+2.000</strong> pacientes atendidos com excelência
+            </p>
+          </div>
+        </div>
+        <div class="hero-image fade-right">
+          <div class="hero-image-wrapper">
+            <!-- PLACEHOLDER: Substitua pelo retrato profissional -->
+            <img src="assets/img/IMG_0862.JPG" alt="Dra. Scarlet Medeiros - Cirurgiã Vascular" class="hero-img"
+              loading="eager" fetchpriority="high">
+            <div class="hero-image-decoration"></div>
+          </div>
+          <div class="hero-floating-card hero-card-1 glass">
+            <i class="ph ph-heart-half" style="color: #e74c3c; font-size: 1.5rem;"></i>
+            <div>
+              <strong>Saúde Vascular</strong>
+              <small>Tratamento especializado</small>
+            </div>
+          </div>
+          <div class="hero-floating-card hero-card-2 glass">
+            <i class="ph ph-check-circle" style="color: #0A8C7A; font-size: 1.5rem;"></i>
+            <div>
+              <strong>100%</strong>
+              <small>Satisfação dos pacientes</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
+        <i class="ph ph-caret-double-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SOBRE / ABOUT SECTION
+  ============================================= -->
+  <section class="section-padding section-about" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-left">
+          <div class="about-image-wrapper">
+            <img src="assets/img/10.png" alt="Sobre a médica vascular" class="about-img" loading="lazy">
+            <div class="about-experience-badge glass">
+              <span class="experience-number">10+</span>
+              <span class="experience-text">Anos de<br>Experiência</span>
+            </div>
+          </div>
+          <div class="about-content fade-up">
+            <span class="section-tag">
+              <i class="ph ph-user-circle"></i>
+              Quem Sou Eu
+            </span>
+            <h2 class="section-title">
+              Especialista dedicada à <span class="text-gradient">saúde vascular</span>
+            </h2>
+            <p class="about-text">
+              Sou cirurgiã vascular e angiologista, com vasta experiência no tratamento de doenças do sistema
+              circulatório.
+              Minha abordagem é humana, aliando tecnologia de ponta e técnicas minimamente invasivas.
+            </p>
+            <p class="about-text">
+              Acredito que cuidar da circulação é proporcionar liberdade e qualidade de vida. Atuo no tratamento de
+              varizes,
+              vasinhos e acompanhamento vascular para sua saúde e bem-estar.
+            </p>
+            <div class="about-features">
+              <div class="about-feature">
+                <i class="ph ph-graduation-cap"></i>
+                <span>Especialista em Cirurgia Vascular</span>
+              </div>
+              <div class="about-feature">
+                <i class="ph ph-certificate"></i>
+                <span>CRM/RQE ativo e regularizado</span>
+              </div>
+              <div class="about-feature">
+                <i class="ph ph-book-open-text"></i>
+                <span>Tecnologias minimamente invasivas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Counter -->
+        <div class="stats-row fade-up">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="ph ph-users-three"></i></div>
+            <span class="stat-number" data-target="2000">0</span>
+            <span class="stat-label">Pacientes Atendidos</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="ph ph-star"></i></div>
+            <span class="stat-number" data-target="98">0</span>
+            <span class="stat-label">% de Satisfação</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="ph ph-calendar"></i></div>
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-label">Anos de Experiência</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="ph ph-video-camera"></i></div>
+            <span class="stat-number" data-target="5000">0</span>
+            <span class="stat-label">Consultas Realizadas</span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ============================================
+       INDICAÇÕES / SERVICES SECTION
+  ============================================= -->
+  <section class="section-padding section-services" id="indicacoes">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <i class="ph ph-stethoscope"></i>
+          Indicações
+        </span>
+        <h2 class="section-title">Para quem é o <span class="text-gradient">atendimento?</span></h2>
+        <p class="section-subtitle">
+          Meu atendimento é voltado para pacientes que necessitam de cuidado médico
+          especializado na área vascular. Veja se alguma dessas condições se aplica a você.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card fade-up" id="service-prevencao">
+          <div class="service-icon">
+            <i class="ph ph-activity"></i>
+          </div>
+          <h3 class="service-title">Tratamento de Varizes</h3>
+          <p class="service-description">
+            Tratamentos modernos e minimamente invasivos para varizes calibrosas.
+          </p>
+        </div>
+
+        <div class="service-card fade-up" id="service-conservador">
+          <div class="service-icon">
+            <i class="ph ph-sparkle"></i>
+          </div>
+          <h3 class="service-title">Vasinhos (Escleroterapia)</h3>
+          <p class="service-description">
+            Secagem de vasinhos com técnicas seguras para saúde e estética das pernas.
+          </p>
+        </div>
+
+        <div class="service-card fade-up" id="service-dialise">
+          <div class="service-icon">
+            <i class="ph ph-bandaids"></i>
+          </div>
+          <h3 class="service-title">Úlceras Venosas</h3>
+          <p class="service-description">
+            Cuidados especializados para cicatrização de feridas e úlceras de perna.
+          </p>
+        </div>
+
+        <div class="service-card fade-up" id="service-transplante">
+          <div class="service-icon">
+            <i class="ph ph-warning-circle"></i>
+          </div>
+          <h3 class="service-title">Trombose Venosa</h3>
+          <p class="service-description">
+            Diagnóstico e tratamento seguro de trombose venosa profunda (TVP) e acompanhamento a longo prazo.
+          </p>
+        </div>
+
+        <div class="service-card fade-up" id="service-infeccoes">
+          <div class="service-icon">
+            <i class="ph ph-footprints"></i>
+          </div>
+          <h3 class="service-title">Pé Diabético</h3>
+          <p class="service-description">
+            Acompanhamento vascular para prevenir e tratar complicações do pé diabético.
+          </p>
+        </div>
+
+        <div class="service-card fade-up" id="service-diabetes">
+          <div class="service-icon">
+            <i class="ph ph-waves"></i>
+          </div>
+          <h3 class="service-title">Doppler Vascular</h3>
+          <p class="service-description">
+            Realização de exames de ultrassom Doppler para diagnóstico preciso da circulação.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       COMO FUNCIONA / HOW IT WORKS SECTION
+  ============================================= -->
+  <section class="section-padding section-steps" id="como-funciona">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <i class="ph ph-path"></i>
+          Como Funciona
+        </span>
+        <h2 class="section-title">Como é a <span class="text-gradient">minha consulta?</span></h2>
+        <p class="section-subtitle">
+          Um processo simples e acolhedor, focado em você e na sua saúde vascular.
+        </p>
+      </div>
+
+      <div class="steps-timeline">
+        <div class="step-item fade-up" id="step-1">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="ph ph-chat-centered-text"></i></div>
+            <h3 class="step-title">Primeiro Contato</h3>
+            <p class="step-description">
+              Entre em contato pelo WhatsApp. Entenderei seu caso e agendaremos a consulta no melhor horário para você.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-item fade-up" id="step-2">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="ph ph-clipboard-text"></i></div>
+            <h3 class="step-title">Avaliação Completa</h3>
+            <p class="step-description">
+              Na consulta, realizarei uma avaliação detalhada do seu histórico, exames físicos e avaliação circulatória.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-item fade-up" id="step-3">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="ph ph-note-pencil"></i></div>
+            <h3 class="step-title">Plano Personalizado</h3>
+            <p class="step-description">
+              Você receberá um plano de tratamento individualizado, focado na resolução do seu problema com as melhores
+              técnicas.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-item fade-up" id="step-4">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="ph ph-chart-line-up"></i></div>
+            <h3 class="step-title">Acompanhamento Contínuo</h3>
+            <p class="step-description">
+              Suporte via WhatsApp, orientações no pós-procedimento e acompanhamento completo da sua evolução.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       DIFERENCIAIS / DIFFERENTIALS SECTION
+  ============================================= -->
+  <section class="section-padding section-differentials" id="diferenciais">
+    <div class="container">
+      <div class="differentials-grid">
+        <div class="differentials-content fade-up">
+          <span class="section-tag">
+            <i class="ph ph-sparkle"></i>
+            Diferenciais
+          </span>
+          <h2 class="section-title">Por que escolher o <span class="text-gradient">meu atendimento?</span></h2>
+          <p class="differentials-text">
+            Ofereço muito mais do que uma simples consulta. Meu compromisso é com a sua saúde,
+            segurança e qualidade de vida a longo prazo.
+          </p>
+
+          <div class="diff-features">
+            <div class="diff-feature">
+              <div class="diff-feature-icon"><i class="ph ph-device-mobile"></i></div>
+              <div class="diff-feature-content">
+                <h4>Diagnóstico Preciso</h4>
+                <p>Avaliação vascular completa para identificar o tratamento mais adequado.</p>
+              </div>
+            </div>
+            <div class="diff-feature">
+              <div class="diff-feature-icon"><i class="ph ph-whatsapp-logo"></i></div>
+              <div class="diff-feature-content">
+                <h4>Acompanhamento Humanizado</h4>
+                <p>Apoio constante via WhatsApp para tirar dúvidas e garantir sua tranquilidade.</p>
+              </div>
+            </div>
+            <div class="diff-feature">
+              <div class="diff-feature-icon"><i class="ph ph-test-tube"></i></div>
+              <div class="diff-feature-content">
+                <h4>Tecnologia Avançada</h4>
+                <p>Equipamentos de ponta para tratamentos menos invasivos e mais eficazes.</p>
+              </div>
+            </div>
+            <div class="diff-feature">
+              <div class="diff-feature-icon"><i class="ph ph-books"></i></div>
+              <div class="diff-feature-content">
+                <h4>Ambiente Acolhedor</h4>
+                <p>Clínica planejada para proporcionar o máximo conforto e bem-estar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="differentials-image fade-right">
+          <!-- Imagem Diferenciais -->
+          <img src="assets/img/1.png" alt="Equipamentos e clínica vascular" class="diff-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROGRAMAS / PROGRAMS SECTION
+  ============================================= -->
+  <section class="section-padding section-programs" id="programas">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <i class="ph ph-package"></i>
+          Programas
+        </span>
+        <h2 class="section-title">Escolha o <span class="text-gradient">programa ideal</span> para você</h2>
+        <p class="section-subtitle">
+          Dois programas pensados para atender diferentes necessidades e momentos do seu tratamento.
+        </p>
+      </div>
+      <p style="color: var(--color-text);">
+        <!-- Cole aqui o código do widget (Elfsight, Trustindex, etc) -->
+        <script defer async src='https://cdn.trustindex.io/loader.js?dc52e89774600679d3967c78ec6'></script>
+      </p>
+      <div class="programs-grid">
+        <div class="program-card fade-up" id="program-30">
+          <div class="program-header">
+            <span class="program-duration">30 dias</span>
+            <h3 class="program-title">Programa Essencial</h3>
+            <p class="program-subtitle">Ideal para quem está começando</p>
+          </div>
+          <div class="program-body">
+            <ul class="program-features">
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Consulta inicial completa (1h)</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Plano alimentar personalizado</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Suporte via WhatsApp por 30 dias</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Acesso ao App de receitas</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>1 retorno incluso</span>
+              </li>
+              <li class="program-feature disabled">
+                <i class="ph ph-x-circle"></i>
+                <span>E-books exclusivos</span>
+              </li>
+              <li class="program-feature disabled">
+                <i class="ph ph-x-circle"></i>
+                <span>Acesso ao curso online</span>
+              </li>
+            </ul>
+          </div>
+          <div class="program-footer">
+            <div class="program-price">
+              <span class="price-label">Investimento</span>
+              <span class="price-value">Consulte</span>
+            </div>
+            <a href="#contato" class="btn btn-outline btn-block">
+              Saber Mais
+            </a>
+          </div>
+        </div>
+
+        <div class="program-card program-featured fade-up" id="program-90">
+          <div class="program-badge">Mais Escolhido</div>
+          <div class="program-header">
+            <span class="program-duration">90 dias</span>
+            <h3 class="program-title">Programa Completo</h3>
+            <p class="program-subtitle">Acompanhamento contínuo e completo</p>
+          </div>
+          <div class="program-body">
+            <ul class="program-features">
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Consulta inicial completa (1h30)</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Plano alimentar personalizado</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Suporte via WhatsApp por 90 dias</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Acesso ao App de receitas</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>3 retornos inclusos</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>E-books exclusivos</span>
+              </li>
+              <li class="program-feature">
+                <i class="ph ph-check-circle"></i>
+                <span>Acesso ao curso online</span>
+              </li>
+            </ul>
+          </div>
+          <div class="program-footer">
+            <div class="program-price">
+              <span class="price-label">Investimento</span>
+              <span class="price-value">Consulte</span>
+            </div>
+            <a href="#contato" class="btn btn-primary btn-block">
+              Quero Este Programa
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ATENDIMENTO ONLINE/PRESENCIAL
+  ============================================= -->
+  <section class="section-padding section-modality" id="modalidade">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <i class="ph ph-globe-hemisphere-west"></i>
+          Modalidades
+        </span>
+        <h2 class="section-title">Atendimento <span class="text-gradient">Online e Presencial</span></h2>
+        <p class="section-subtitle">
+          Você escolhe a forma que melhor se encaixa na sua rotina.
+        </p>
+      </div>
+
+      <div class="modality-grid">
+        <div class="modality-card fade-left" id="modality-online">
+          <div class="modality-icon">
+            <i class="ph ph-video-camera"></i>
+          </div>
+          <h3 class="modality-title">Consulta Online</h3>
+          <p class="modality-description">
+            Atendimento por videochamada para pacientes de todo o Brasil e exterior.
+            A mesma qualidade do presencial, no conforto da sua casa.
+          </p>
+          <ul class="modality-benefits">
+            <li><i class="ph ph-check"></i> Atendimento de qualquer lugar</li>
+            <li><i class="ph ph-check"></i> Horários flexíveis</li>
+            <li><i class="ph ph-check"></i> Mesma qualidade do presencial</li>
+            <li><i class="ph ph-check"></i> Gravação da consulta disponível</li>
+          </ul>
+          <!-- Imagem de consulta online -->
+          <img src="assets/img/9.png" alt="Consulta Online" class="modality-img" loading="lazy">
+        </div>
+
+        <div class="modality-card fade-right" id="modality-presencial">
+          <div class="modality-icon">
+            <i class="ph ph-map-pin"></i>
+          </div>
+          <h3 class="modality-title">Consulta Presencial</h3>
+          <p class="modality-description">
+            Atendimento no consultório em Balneário Camboriú/SC, em ambiente acolhedor e preparado
+            para receber você com todo conforto.
+          </p>
+          <ul class="modality-benefits">
+            <li><i class="ph ph-check"></i> Avaliação antropométrica completa</li>
+            <li><i class="ph ph-check"></i> Ambiente acolhedor</li>
+            <li><i class="ph ph-check"></i> Bioimpedância inclusa</li>
+            <li><i class="ph ph-check"></i> Estacionamento gratuito</li>
+          </ul>
+          <!-- Imagem do consultório -->
+          <img src="assets/img/IMG_0861.JPG" alt="Consultório Presencial" class="modality-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       DEPOIMENTOS / TESTIMONIALS SECTION
+  ============================================= -->
+  <section class="section-padding section-testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <i class="ph ph-chat-circle-text"></i>
+          Depoimentos
+        </span>
+        <h2 class="section-title">O que dizem os <span class="text-gradient">meus pacientes</span></h2>
+        <p class="section-subtitle">
+          Histórias reais de pacientes que transformaram sua qualidade de vida com nosso tratamento vascular.
+        </p>
+      </div>
+
+      <div class="testimonials-carousel" id="testimonials-carousel">
+        <div class="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+            </div>
+            <p class="testimonial-text">
+              "Depois de anos sofrendo com dores nas pernas, finalmente encontrei uma profissional
+              que entende minhas necessidades. O tratamento de varizes melhorou muito minha qualidade de vida em apenas
+              poucos meses."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div class="testimonial-info">
+                <strong>Maria Silva</strong>
+                <span>Paciente há 1 ano</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+            </div>
+            <p class="testimonial-text">
+              "O atendimento online é incrível! Moro no interior e consigo ter o mesmo cuidado
+              de quem está perto do consultório. O suporte por WhatsApp é um diferencial enorme."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">J</div>
+              <div class="testimonial-info">
+                <strong>João Santos</strong>
+                <span>Paciente há 6 meses</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+            </div>
+            <p class="testimonial-text">
+              "Fiz o tratamento completo de escleroterapia e os resultados foram incríveis. Minhas pernas
+              ficaram lindas e não sinto mais peso no fim do dia. Recomendo para todas as pacientes!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div class="testimonial-info">
+                <strong>Ana Oliveira</strong>
+                <span>Paciente há 2 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+              <i class="ph ph-star-fill"></i>
+            </div>
+            <p class="testimonial-text">
+              "Profissional atenciosa, dedicada e muito competente. Me senti segura em todo
+              o procedimento e a recuperação foi super rápida. O atendimento humanizado
+              mudou minha experiência com cirurgia!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">C</div>
+              <div class="testimonial-info">
+                <strong>Carlos Mendes</strong>
+                <span>Paciente há 8 meses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Anterior">
+            <i class="ph ph-caret-left"></i>
+          </button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Próximo">
+            <i class="ph ph-caret-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ SECTION
+  ============================================= -->
+  <section class="section-padding section-faq" id="faq">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-header fade-up">
+          <span class="section-tag">
+            <i class="ph ph-question"></i>
+            Perguntas Frequentes
+          </span>
+          <h2 class="section-title">Dúvidas <span class="text-gradient">frequentes</span></h2>
+          <p class="faq-text">
+            Encontre respostas para as perguntas mais comuns sobre o atendimento vascular.
+          </p>
+        </div>
+
+        <div class="faq-list fade-up">
+          <div class="faq-item" id="faq-1">
+            <button class="faq-question" aria-expanded="false">
+              <span>Quanto tempo dura a consulta?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                A primeira consulta tem duração de cerca de 1 hora, pois é feita uma avaliação completa
+                do seu histórico vascular, exame físico e, se necessário, o ecodoppler.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-2">
+            <button class="faq-question" aria-expanded="false">
+              <span>Com que frequência devo consultar?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                A frequência é personalizada de acordo com o seu caso. Geralmente, os retornos
+                são a cada 15, 30 ou 60 dias, dependendo da fase do tratamento e das suas necessidades.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-3">
+            <button class="faq-question" aria-expanded="false">
+              <span>Aceita convênio médico?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                O atendimento é particular. Porém, emito recibo para reembolso junto ao seu
+                convênio médico, caso o plano aceite. Consulte sua operadora para verificar
+                a cobertura para consultas vasculares.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-4">
+            <button class="faq-question" aria-expanded="false">
+              <span>A consulta online é tão boa quanto a presencial?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim! A consulta online é realizada por videochamada e tem a mesma qualidade do
+                atendimento presencial. A diferença é que a avaliação antropométrica (medidas corporais)
+                é feita de forma orientada remotamente ou com apoio de aparelhos que o paciente tenha em casa.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-5">
+            <button class="faq-question" aria-expanded="false">
+              <span>Preciso de encaminhamento médico?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Não é necessário encaminhamento médico.
+                Se você tem queixas como dor, inchaço nas pernas, vasinhos ou histórico familiar de varizes,
+                pode agendar diretamente sua avaliação.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-6">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como funciona o suporte via WhatsApp?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Você terá acesso a um canal direto comigo pelo WhatsApp para tirar
+                dúvidas sobre pós-procedimentos, medicações e recuperação.
+                A equipe está sempre disponível para garantir sua tranquilidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA BANNER SECTION
+  ============================================= -->
+  <section class="section-cta" id="contato">
+    <div class="cta-pattern"></div>
+    <div class="container">
+      <div class="cta-content fade-up">
+        <h2 class="cta-title">Pronta para cuidar da sua <span class="text-gradient-light">saúde vascular?</span></h2>
+        <p class="cta-text">
+          Entre em contato para saber mais sobre os programas de acompanhamento e valores.
+          Sua jornada para uma vida mais saudável começa aqui.
+        </p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/5581991842765?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Scarlet%20Medeiros."
+            class="btn btn-white btn-lg" target="_blank" rel="noopener" id="cta-whatsapp">
+            <i class="ph ph-whatsapp-logo"></i>
+            Falar no WhatsApp
+          </a>
+          <a href="https://www.instagram.com/" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener"
+            id="cta-instagram">
+            <i class="ph ph-instagram-logo"></i>
+            Siga no Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <img src="assets/img/IMG_7556.PNG" alt="Logo" class="footer-logo-img">
+            <span class="footer-logo-text">Scarlet <span>Medeiros</span></span>
+          </a>
+          <p class="footer-description">
+            Especialista em angiologia e cirurgia vascular, dedicada a cuidar da sua saúde com ciência,
+            tecnologia e tratamentos humanizados.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"
+              class="social-link">
+              <i class="ph ph-instagram-logo"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"
+              class="social-link">
+              <i class="ph ph-facebook-logo"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube" class="social-link">
+              <i class="ph ph-youtube-logo"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"
+              class="social-link">
+              <i class="ph ph-linkedin-logo"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-title">Links Rápidos</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#indicacoes">Indicações</a></li>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#programas">Programas</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">Contato</h4>
+          <ul>
+            <li>
+              <i class="ph ph-map-pin"></i>
+              <span>Recife, PE</span>
+            </li>
+            <!--<li>
+              <i class="ph ph-envelope"></i>
+              <a href="mailto:contato@scarletmedeiros.com">contato@scarletmedeiros.com</a>
+            </li> -->
+            <li>
+              <i class="ph ph-whatsapp-logo"></i>
+              <a href="https://wa.me/5581991842765">(81) 99184-2765</a>
+            </li>
+            <!--<li>
+              <i class="ph ph-clock"></i>
+              <span>Seg - Sex: 8h às 18h</span>
+            </li> -->
+          </ul>
+        </div>
+
+        <!--<div class="footer-newsletter">
+          <h4 class="footer-title">Newsletter</h4>
+          <p>Receba dicas de saúde vascular e novidades no seu e-mail.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Seu melhor e-mail" required aria-label="E-mail para newsletter">
+            <button type="submit" aria-label="Inscrever">
+              <i class="ph ph-paper-plane-tilt"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Scarlet Medeiros. Todos os direitos reservados.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- ============================================
+       FLOATING ELEMENTS
+  ============================================= -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5581991842765?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" id="whatsapp-float">
+    <i class="ph ph-whatsapp-logo"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <i class="ph ph-caret-up"></i>
+  </button>
+
+  <!-- Main JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
