@@ -730,6 +730,7 @@ ul, ol {
 
 .hero-image-wrapper {
   position: relative;
+  aspect-ratio: 4 / 5;
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
@@ -737,7 +738,9 @@ ul, ol {
 
 .hero-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
   display: block;
   border-radius: var(--radius-xl);
 }
@@ -813,20 +816,42 @@ ul, ol {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  margin-bottom: 4rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 0;
+  align-items: stretch;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-image {
+  min-height: 100%;
+  aspect-ratio: 4 / 5;
 }
 
 .about-image-wrapper {
   position: relative;
+  height: 100%;
 }
 
 .about-img {
   width: 100%;
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-xl);
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-primary-ultra-light) 100%);
+  border-left: 1px solid var(--color-border-light);
 }
 
 .about-experience-badge {
@@ -894,42 +919,6 @@ ul, ol {
   justify-content: center;
   background: var(--color-primary-ultra-light);
   border-radius: var(--radius-md);
-}
-
-/* Stats Row */
-.stats-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 2.5rem;
-  background: var(--gradient-primary);
-  border-radius: var(--radius-xl);
-  box-shadow: 0 10px 40px rgba(10, 140, 122, 0.2);
-}
-
-.stat-item {
-  text-align: center;
-  color: white;
-}
-
-.stat-icon {
-  font-size: var(--fs-2xl);
-  margin-bottom: 0.5rem;
-  opacity: 0.85;
-}
-
-.stat-number {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: var(--fs-3xl);
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-}
-
-.stat-label {
-  font-size: var(--fs-sm);
-  opacity: 0.85;
-  font-weight: 500;
 }
 
 /* ============================================
@@ -1369,164 +1358,90 @@ ul, ol {
   background: var(--color-bg);
 }
 
-.testimonials-carousel {
-  overflow: hidden;
-  position: relative;
-}
-
-.testimonials-track {
-  display: flex;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.testimonial-card {
-  min-width: 50%;
-  padding: 0 1rem;
-  box-sizing: border-box;
-  flex-shrink: 0;
-}
-
-.testimonial-card > div,
-.testimonial-card > p,
-.testimonial-card > .testimonial-stars {
-  /* inner wrapper styles */
-}
-
-.testimonial-card {
-  background: transparent;
-}
-
-.testimonial-card > * {
-  background: var(--color-bg);
-}
-
-/* Reset - card styling on inner content */
-.testimonial-card {
-  min-width: 50%;
-  padding: 0 1rem;
-  flex-shrink: 0;
-  display: flex;
-}
-
-.testimonial-card > div:only-child,
-.testimonial-card {
-  /* Handled via inner wrapper approach */
-}
-
-/* Re-approach: use the card itself as styled container */
-.testimonial-card {
-  min-width: 50%;
-  padding: 2rem;
-  margin: 0 0.75rem;
-  flex-shrink: 0;
+/* ============================================
+   16. LOCATION SECTION
+   ============================================ */
+.section-location {
   background: var(--color-bg-alt);
-  border-radius: var(--radius-xl);
+}
+
+.location-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  overflow: hidden;
+  background: var(--color-bg);
   border: 1px solid var(--color-border-light);
-  flex-direction: column;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
 }
 
-.testimonial-stars {
+.location-map {
+  min-height: 440px;
+  background: var(--color-primary-ultra-light);
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  border: 0;
+  display: block;
+}
+
+.location-content {
   display: flex;
-  gap: 0.25rem;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(2rem, 5vw, 4.5rem);
 }
 
-.testimonial-stars i {
-  color: var(--color-star);
-  font-size: var(--fs-md);
+.location-content .section-title {
+  text-align: left;
 }
 
-.testimonial-text {
-  font-size: var(--fs-base);
+.location-text {
+  margin-bottom: 1.75rem;
   color: var(--color-text);
   line-height: 1.8;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-  flex: 1;
 }
 
-.testimonial-author {
+.location-detail {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.875rem;
+  margin-bottom: 2rem;
 }
 
-.testimonial-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--gradient-primary);
-  color: white;
+.location-detail > i {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: var(--fs-md);
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-ultra-light);
+  color: var(--color-primary-dark);
+  font-size: var(--fs-xl);
 }
 
-.testimonial-info strong {
+.location-detail strong,
+.location-detail span {
   display: block;
-  font-size: var(--fs-sm);
+}
+
+.location-detail strong {
   color: var(--color-dark);
+  font-size: var(--fs-sm);
 }
 
-.testimonial-info span {
-  font-size: var(--fs-xs);
+.location-detail span {
   color: var(--color-text-light);
-}
-
-/* Carousel Controls */
-.carousel-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.carousel-btn {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
-  color: var(--color-text);
-  font-size: var(--fs-lg);
-  transition: all var(--transition-fast);
-}
-
-.carousel-btn:hover {
-  background: var(--color-primary);
-  color: white;
-  border-color: var(--color-primary);
-}
-
-.carousel-dots {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.carousel-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--color-border);
-  border: none;
-  transition: all var(--transition-fast);
-  cursor: pointer;
-}
-
-.carousel-dot.active {
-  background: var(--color-primary);
-  width: 28px;
-  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
 }
 
 /* ============================================
-   16. FAQ SECTION
+   17. FAQ SECTION
    ============================================ */
 .section-faq {
   background: var(--color-bg-alt);
@@ -1938,20 +1853,47 @@ ul, ol {
 
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 0;
   }
 
   .about-image-wrapper {
-    max-width: 450px;
-    margin: 0 auto;
+    max-width: none;
+  }
+
+  .about-img {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .about-content {
+    border-top: 1px solid var(--color-border-light);
+    border-left: 0;
   }
 
   .about-content .section-title {
     text-align: center;
   }
 
-  .stats-row {
-    grid-template-columns: repeat(2, 1fr);
+  .location-card {
+    grid-template-columns: 1fr;
+  }
+
+  .location-map,
+  .location-map iframe {
+    min-height: 360px;
+  }
+
+  .location-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .location-content .section-title {
+    text-align: center;
+  }
+
+  .location-detail {
+    text-align: left;
   }
 
   .services-grid {
@@ -2074,17 +2016,6 @@ ul, ol {
     display: none;
   }
 
-  /* Stats */
-  .stats-row {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .stat-number {
-    font-size: var(--fs-2xl);
-  }
-
   /* Services */
   .services-grid {
     grid-template-columns: 1fr;
@@ -2107,11 +2038,6 @@ ul, ol {
   .modality-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-
-  /* Testimonials */
-  .testimonial-card {
-    min-width: 100%;
   }
 
   /* CTA */
@@ -2155,11 +2081,12 @@ ul, ol {
     width: 100%;
   }
 
-  .stats-row {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .section-header {
     margin-bottom: 2.5rem;
+  }
+
+  .location-map,
+  .location-map iframe {
+    min-height: 300px;
   }
 }
